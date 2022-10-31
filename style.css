@@ -1,0 +1,365 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    position: absolute;
+}
+.iv-class{
+    width: 100%;
+    display: block;
+    background-color: white;
+    margin-top: 0px;
+    position: fixed;    
+}
+.div-nav{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    margin-bottom: 0px;
+    background-color: white;
+}
+.spin{
+    width: 62px;
+    height: 72px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 8px;
+    background: linear-gradient(135deg,red,blue 50%,transparent 50%);
+    background-size: 255%;
+    background-position: 100% 100%;
+    transition: background 0.5s;
+}
+.spin:hover{
+    background-position: 0% 0%;
+}
+.spinner{
+    width: 60px;
+    height: 60px;
+    margin-top: 42px;
+    margin-left: 52px;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+
+}
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    background-size: 50% 100%;
+    border-radius: inherit;
+}
+.button:hover::before {
+    animation: animate_border.75s linear infinite;
+}
+.button span {
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: white;
+    padding: 13px 20px;
+    border-radius: 3px;
+    position: relative;
+    z-index: 2;
+}
+@keyframes animate_border {
+    to {
+        transform: translateX(-50%);
+    }
+}
+.cod{
+    margin-top: 5px;
+    margin-left: 30px;
+    width: inherit;
+    height: inherit;
+}
+.my{
+    margin-top: 20px;
+    margin-right: 80px;
+    width: inherit;
+    height: inherit;
+}
+.ar{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.st{
+    list-style: none;
+    margin: 0 25px;
+}
+.un{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 18px;
+    font-family: "poppins",sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+ul.ar:hover li.st a.un{
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(5px);
+}
+ul.ar li.st a.un:hover{
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0px);
+}
+.lo{
+    margin-top: 25px;
+    margin-right: 2px;
+    display: flex;
+    width: 400px;
+    height: 30px;
+}
+.text-sm{
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255/var(--tw-text-opacity));
+    font-weight: 500;
+    font-size: .975rem;
+    line-height: 1.25rem;
+    text-align: center;
+    padding: 12px;
+    border: none;
+}
+.bg-purple-700 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(126 34 206/var(--tw-bg-opacity));
+    border-radius: 0.5rem;
+    align-items: center;
+    display: inline-flex;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    cursor: pointer;
+}
+div.lo button.text-sm:hover{
+    background-color: blue;
+}
+.kl{
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+.vi{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 40px;
+    position: absolute;
+    margin-bottom: 5px;
+}
+.arn{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 550px;
+    margin-top: 10px;
+}
+.stn{
+    list-style: none;
+    margin: 0 25px;
+    
+}
+.unn{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    padding: 2px;
+    font-size: 20px;
+    font-family: "poppins",sans-serif;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: purple;
+    
+}
+ul.arn:hover li.stn a.unn{
+    transform: scale(1.5);
+    opacity: .2;
+    filter: blur(5px);
+}
+ul.arn li.stn a.unn:hover{
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0px);
+}
+.dk{
+    margin-left: 500px;
+    list-style: none;
+    font-size: 35px ;
+    color: purple;
+}
+ul.arn li.dk a.unn:hover{
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0px);
+}
+.but{
+    margin-top: 110px;
+    height: auto;
+    width: 100%;
+    object-position: 100px;
+}
+h1.mj{
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+h2.jm{
+    font-size: 25px;
+    margin: 16px;
+}
+.buton{
+    text-decoration: none;
+    margin: 16px;
+    letter-spacing: 2px;
+    color: blue;
+    font-weight: bold;
+    outline: 2px solid blue;
+    padding: 25px 50px;
+    overflow: hidden;
+    transition: color 1s;
+}
+.buton:hover{
+    color: purple;
+    font-size: large;
+}
+.im{
+    height: 600px;
+    width: 700px;
+}
+h1.ce{
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 60px;
+}
+div.re{
+    margin-top: 30px;
+    background-color: white;
+    display: flex;
+    width: 100%;
+}
+div.ht{
+    width: 400px;
+    height: 750px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+div.cs{
+    width: 400px;
+    height: 750px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+div.ja{
+    width: 400px;
+    height: 750px;
+    margin-top: 30px;
+    margin-left: 50px;
+    background-color: white;
+    border-radius: 10px;
+}
+button.tt{
+    margin-left: 40px;
+    margin-top: 40px;
+    border-radius: 50%;
+    padding: 12px;
+    background-color: purple;
+    color: white;
+    border: none;
+    
+}
+button.tt:hover{
+    background-color: blue;
+    font-size: large;
+}
+div.in{
+    margin-top: 40px;
+    margin-left: 50px;
+    height: 100%;
+    width: 600px;
+    padding: 2rem;
+    border-radius: 0.25rem;
+}
+.bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246/var(--tw-bg-opacity));
+}
+.foot{
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+.pin{
+    width: 62px;
+    height: 72px;
+    border-radius: 50%;
+}
+.piner{
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.pineer{
+    width: 60px;
+    height: 60px;
+    margin-top: 60px;
+    margin-left: 15px;
+}
+.com{
+    width: 300px;
+    height: 60px;
+    margin-top: 65px;
+    margin-left: 30px;
+}
+.empty{
+    width: 2px;
+    height: 60px;
+    background-color: gainsboro;
+    margin-top: 60px;
+    margin-left: 115px;
+}
+.social{
+    margin-top: 85px;
+    margin-left: 500px;
+    display: flex;
+}
+.soc{
+    margin-left: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
